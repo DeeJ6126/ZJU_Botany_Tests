@@ -4,6 +4,7 @@ import { AppLayout } from './components/AppLayout'
 import { PracticeProvider } from './context/PracticeContext'
 import { useQuestionBank } from './hooks/useQuestionBank'
 import { CategorySelectionPage } from './pages/CategorySelectionPage'
+import { GalleryPage } from './pages/GalleryPage'
 import { IntroPage } from './pages/IntroPage'
 import { MistakesPage } from './pages/MistakesPage'
 import { PracticePage } from './pages/PracticePage'
@@ -46,6 +47,7 @@ function App() {
           <Route path="/" element={<IntroPage />} />
           <Route path="/categories" element={<CategorySelectionPage />} />
           <Route path="/practice" element={<PracticePage />} />
+          <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/mistakes" element={<MistakesPage />} />
           <Route path="/results" element={<ResultsPage />} />
           <Route path="*" element={<Navigate replace to="/" />} />

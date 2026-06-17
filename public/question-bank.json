@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-17T06:07:36.205682+00:00",
+  "generatedAt": "2026-06-17T06:25:04.079115+00:00",
   "totalQuestions": 192,
   "categories": [
     {
@@ -60,7 +60,7 @@
       "id": "叶_夹竹桃2-10X-1.jpg",
       "categoryId": "叶",
       "imagePath": "data/叶/夹竹桃2-10X-1.jpg",
-      "answer": "双子叶——叶——夹竹桃2——10X",
+      "answer": "双子叶——叶——夹竹桃——10X",
       "plantType": "双子叶",
       "sourceName": "夹竹桃2-10X-1.jpg",
       "magnification": "10X"
@@ -69,7 +69,7 @@
       "id": "叶_夹竹桃2-10X-2.jpg",
       "categoryId": "叶",
       "imagePath": "data/叶/夹竹桃2-10X-2.jpg",
-      "answer": "双子叶——叶——夹竹桃2——10X",
+      "answer": "双子叶——叶——夹竹桃——10X",
       "plantType": "双子叶",
       "sourceName": "夹竹桃2-10X-2.jpg",
       "magnification": "10X"
@@ -78,7 +78,7 @@
       "id": "叶_夹竹桃2-40X-1.jpg",
       "categoryId": "叶",
       "imagePath": "data/叶/夹竹桃2-40X-1.jpg",
-      "answer": "双子叶——叶——夹竹桃2——40X",
+      "answer": "双子叶——叶——夹竹桃——40X",
       "plantType": "双子叶",
       "sourceName": "夹竹桃2-40X-1.jpg",
       "magnification": "40X"
@@ -87,7 +87,7 @@
       "id": "叶_夹竹桃2-40X-2.jpg",
       "categoryId": "叶",
       "imagePath": "data/叶/夹竹桃2-40X-2.jpg",
-      "answer": "双子叶——叶——夹竹桃2——40X",
+      "answer": "双子叶——叶——夹竹桃——40X",
       "plantType": "双子叶",
       "sourceName": "夹竹桃2-40X-2.jpg",
       "magnification": "40X"
@@ -96,7 +96,7 @@
       "id": "叶_夹竹桃2-4X-1.jpg",
       "categoryId": "叶",
       "imagePath": "data/叶/夹竹桃2-4X-1.jpg",
-      "answer": "双子叶——叶——夹竹桃2——4X",
+      "answer": "双子叶——叶——夹竹桃——4X",
       "plantType": "双子叶",
       "sourceName": "夹竹桃2-4X-1.jpg",
       "magnification": "4X"
@@ -177,7 +177,7 @@
       "id": "叶_桑叶2-10X-1.jpg",
       "categoryId": "叶",
       "imagePath": "data/叶/桑叶2-10X-1.jpg",
-      "answer": "双子叶——叶——桑叶2——10X",
+      "answer": "双子叶——叶——桑——10X",
       "plantType": "双子叶",
       "sourceName": "桑叶2-10X-1.jpg",
       "magnification": "10X"
@@ -186,7 +186,7 @@
       "id": "叶_桑叶2-40X-1.jpg",
       "categoryId": "叶",
       "imagePath": "data/叶/桑叶2-40X-1.jpg",
-      "answer": "双子叶——叶——桑叶2——40X",
+      "answer": "双子叶——叶——桑——40X",
       "plantType": "双子叶",
       "sourceName": "桑叶2-40X-1.jpg",
       "magnification": "40X"
@@ -195,7 +195,7 @@
       "id": "叶_桑叶2-40X-2.jpg",
       "categoryId": "叶",
       "imagePath": "data/叶/桑叶2-40X-2.jpg",
-      "answer": "双子叶——叶——桑叶2——40X",
+      "answer": "双子叶——叶——桑——40X",
       "plantType": "双子叶",
       "sourceName": "桑叶2-40X-2.jpg",
       "magnification": "40X"
@@ -618,7 +618,7 @@
       "id": "根_水稻嫩根40X-2 .jpg",
       "categoryId": "根",
       "imagePath": "data/根/水稻嫩根40X-2 .jpg",
-      "answer": "单子叶——根——水稻嫩根-2——40X",
+      "answer": "单子叶——根——水稻嫩根X——40X",
       "plantType": "单子叶",
       "sourceName": "水稻嫩根40X-2 .jpg",
       "magnification": "40X"
@@ -834,7 +834,7 @@
       "id": "植物组织_南瓜茎纵切10X-1.jpg",
       "categoryId": "植物组织",
       "imagePath": "data/植物组织/南瓜茎纵切10X-1.jpg",
-      "answer": "南瓜茎纵切——10X",
+      "answer": "双子叶——茎——南瓜茎纵切——10X",
       "plantType": "双子叶",
       "sourceName": "南瓜茎纵切10X-1.jpg",
       "magnification": "10X"
@@ -843,7 +843,7 @@
       "id": "植物组织_南瓜茎纵切10X-2.jpg",
       "categoryId": "植物组织",
       "imagePath": "data/植物组织/南瓜茎纵切10X-2.jpg",
-      "answer": "南瓜茎纵切——10X",
+      "answer": "双子叶——茎——南瓜茎纵切——10X",
       "plantType": "双子叶",
       "sourceName": "南瓜茎纵切10X-2.jpg",
       "magnification": "10X"
@@ -852,7 +852,7 @@
       "id": "植物组织_南瓜茎纵切40X-1.jpg",
       "categoryId": "植物组织",
       "imagePath": "data/植物组织/南瓜茎纵切40X-1.jpg",
-      "answer": "南瓜茎纵切——40X",
+      "answer": "双子叶——茎——南瓜茎纵切——40X",
       "plantType": "双子叶",
       "sourceName": "南瓜茎纵切40X-1.jpg",
       "magnification": "40X"
@@ -861,7 +861,7 @@
       "id": "植物组织_南瓜茎纵切40X-2.jpg",
       "categoryId": "植物组织",
       "imagePath": "data/植物组织/南瓜茎纵切40X-2.jpg",
-      "answer": "南瓜茎纵切——40X",
+      "answer": "双子叶——茎——南瓜茎纵切——40X",
       "plantType": "双子叶",
       "sourceName": "南瓜茎纵切40X-2.jpg",
       "magnification": "40X"
@@ -870,7 +870,7 @@
       "id": "植物组织_南瓜茎纵切4X.jpg",
       "categoryId": "植物组织",
       "imagePath": "data/植物组织/南瓜茎纵切4X.jpg",
-      "answer": "南瓜茎纵切——4X",
+      "answer": "双子叶——茎——南瓜茎纵切——4X",
       "plantType": "双子叶",
       "sourceName": "南瓜茎纵切4X.jpg",
       "magnification": "4X"
@@ -879,7 +879,7 @@
       "id": "植物组织_小麦节居间分生组织10X-1.jpg",
       "categoryId": "植物组织",
       "imagePath": "data/植物组织/小麦节居间分生组织10X-1.jpg",
-      "answer": "小麦节居间分生组织——10X",
+      "answer": "单子叶——组织——小麦节居间分生组织——10X",
       "plantType": "单子叶",
       "sourceName": "小麦节居间分生组织10X-1.jpg",
       "magnification": "10X"
@@ -888,7 +888,7 @@
       "id": "植物组织_小麦节居间分生组织40X-1.jpg",
       "categoryId": "植物组织",
       "imagePath": "data/植物组织/小麦节居间分生组织40X-1.jpg",
-      "answer": "小麦节居间分生组织——40X",
+      "answer": "单子叶——组织——小麦节居间分生组织——40X",
       "plantType": "单子叶",
       "sourceName": "小麦节居间分生组织40X-1.jpg",
       "magnification": "40X"
@@ -897,7 +897,7 @@
       "id": "植物组织_小麦节居间分生组织40X-2.jpg",
       "categoryId": "植物组织",
       "imagePath": "data/植物组织/小麦节居间分生组织40X-2.jpg",
-      "answer": "小麦节居间分生组织——40X",
+      "answer": "单子叶——组织——小麦节居间分生组织——40X",
       "plantType": "单子叶",
       "sourceName": "小麦节居间分生组织40X-2.jpg",
       "magnification": "40X"
@@ -906,7 +906,7 @@
       "id": "植物组织_桔皮分泌腔.jpg",
       "categoryId": "植物组织",
       "imagePath": "data/植物组织/桔皮分泌腔.jpg",
-      "answer": "桔皮分泌腔",
+      "answer": "双子叶——组织——桔皮分泌腔",
       "plantType": "双子叶",
       "sourceName": "桔皮分泌腔.jpg",
       "magnification": ""
@@ -915,7 +915,7 @@
       "id": "植物组织_梨果肉石细胞10X.jpg",
       "categoryId": "植物组织",
       "imagePath": "data/植物组织/梨果肉石细胞10X.jpg",
-      "answer": "梨果肉石细胞——10X",
+      "answer": "双子叶——组织——梨果肉石细胞——10X",
       "plantType": "双子叶",
       "sourceName": "梨果肉石细胞10X.jpg",
       "magnification": "10X"
@@ -924,7 +924,7 @@
       "id": "植物组织_梨果肉石细胞40X.jpg",
       "categoryId": "植物组织",
       "imagePath": "data/植物组织/梨果肉石细胞40X.jpg",
-      "answer": "梨果肉石细胞——40X",
+      "answer": "双子叶——组织——梨果肉石细胞——40X",
       "plantType": "双子叶",
       "sourceName": "梨果肉石细胞40X.jpg",
       "magnification": "40X"
@@ -933,7 +933,7 @@
       "id": "植物组织_棉分泌腔40X.jpg",
       "categoryId": "植物组织",
       "imagePath": "data/植物组织/棉分泌腔40X.jpg",
-      "answer": "棉分泌腔——40X",
+      "answer": "双子叶——组织——棉分泌腔——40X",
       "plantType": "双子叶",
       "sourceName": "棉分泌腔40X.jpg",
       "magnification": "40X"
@@ -951,7 +951,7 @@
       "id": "植物组织_棉叶分泌腔40X.jpg",
       "categoryId": "植物组织",
       "imagePath": "data/植物组织/棉叶分泌腔40X.jpg",
-      "answer": "棉叶分泌腔——40X",
+      "answer": "双子叶——叶——棉叶分泌腔——40X",
       "plantType": "双子叶",
       "sourceName": "棉叶分泌腔40X.jpg",
       "magnification": "40X"
@@ -960,7 +960,7 @@
       "id": "植物组织_棉叶腺毛40X.jpg",
       "categoryId": "植物组织",
       "imagePath": "data/植物组织/棉叶腺毛40X.jpg",
-      "answer": "棉叶腺毛——40X",
+      "answer": "双子叶——叶——棉叶腺毛——40X",
       "plantType": "双子叶",
       "sourceName": "棉叶腺毛40X.jpg",
       "magnification": "40X"
@@ -969,7 +969,7 @@
       "id": "植物组织_棉叶蜜腺40X.jpg",
       "categoryId": "植物组织",
       "imagePath": "data/植物组织/棉叶蜜腺40X.jpg",
-      "answer": "棉叶蜜腺——40X",
+      "answer": "双子叶——叶——棉叶蜜腺——40X",
       "plantType": "双子叶",
       "sourceName": "棉叶蜜腺40X.jpg",
       "magnification": "40X"
@@ -978,7 +978,7 @@
       "id": "植物组织_棉叶蜜腺和分泌腔10X.jpg",
       "categoryId": "植物组织",
       "imagePath": "data/植物组织/棉叶蜜腺和分泌腔10X.jpg",
-      "answer": "棉叶蜜腺和分泌腔——10X",
+      "answer": "双子叶——叶——棉叶蜜腺和分泌腔——10X",
       "plantType": "双子叶",
       "sourceName": "棉叶蜜腺和分泌腔10X.jpg",
       "magnification": "10X"
@@ -987,7 +987,7 @@
       "id": "植物组织_洋葱根尖10X.jpg",
       "categoryId": "植物组织",
       "imagePath": "data/植物组织/洋葱根尖10X.jpg",
-      "answer": "洋葱根尖——10X",
+      "answer": "单子叶——根——洋葱根尖——10X",
       "plantType": "单子叶",
       "sourceName": "洋葱根尖10X.jpg",
       "magnification": "10X"
@@ -996,7 +996,7 @@
       "id": "植物组织_洋葱根尖40X中末期.jpg",
       "categoryId": "植物组织",
       "imagePath": "data/植物组织/洋葱根尖40X中末期.jpg",
-      "answer": "洋葱根尖中末期——40X",
+      "answer": "单子叶——根——洋葱根尖中末期——40X",
       "plantType": "单子叶",
       "sourceName": "洋葱根尖40X中末期.jpg",
       "magnification": "40X"
@@ -1005,7 +1005,7 @@
       "id": "植物组织_洋葱根尖40X中末期2.jpg",
       "categoryId": "植物组织",
       "imagePath": "data/植物组织/洋葱根尖40X中末期2.jpg",
-      "answer": "洋葱根尖中末期2——40X",
+      "answer": "单子叶——根——洋葱根尖中末期——40X",
       "plantType": "单子叶",
       "sourceName": "洋葱根尖40X中末期2.jpg",
       "magnification": "40X"
@@ -1014,7 +1014,7 @@
       "id": "植物组织_洋葱根尖40X后期-2.jpg",
       "categoryId": "植物组织",
       "imagePath": "data/植物组织/洋葱根尖40X后期-2.jpg",
-      "answer": "洋葱根尖后期-2——40X",
+      "answer": "单子叶——根——洋葱根尖后期——40X",
       "plantType": "单子叶",
       "sourceName": "洋葱根尖40X后期-2.jpg",
       "magnification": "40X"
@@ -1023,7 +1023,7 @@
       "id": "植物组织_洋葱根尖40X根冠.jpg",
       "categoryId": "植物组织",
       "imagePath": "data/植物组织/洋葱根尖40X根冠.jpg",
-      "answer": "洋葱根尖根冠——40X",
+      "answer": "单子叶——根——洋葱根尖根冠——40X",
       "plantType": "单子叶",
       "sourceName": "洋葱根尖40X根冠.jpg",
       "magnification": "40X"
@@ -1032,7 +1032,7 @@
       "id": "植物组织_蓖麻胚乳10X.jpg",
       "categoryId": "植物组织",
       "imagePath": "data/植物组织/蓖麻胚乳10X.jpg",
-      "answer": "蓖麻胚乳——10X",
+      "answer": "双子叶——组织——蓖麻胚乳——10X",
       "plantType": "双子叶",
       "sourceName": "蓖麻胚乳10X.jpg",
       "magnification": "10X"
@@ -1041,7 +1041,7 @@
       "id": "植物组织_蓖麻胚乳40X.jpg",
       "categoryId": "植物组织",
       "imagePath": "data/植物组织/蓖麻胚乳40X.jpg",
-      "answer": "蓖麻胚乳——40X",
+      "answer": "双子叶——组织——蓖麻胚乳——40X",
       "plantType": "双子叶",
       "sourceName": "蓖麻胚乳40X.jpg",
       "magnification": "40X"
@@ -1050,7 +1050,7 @@
       "id": "植物组织_蓖麻胚乳4X.jpg",
       "categoryId": "植物组织",
       "imagePath": "data/植物组织/蓖麻胚乳4X.jpg",
-      "answer": "蓖麻胚乳——4X",
+      "answer": "双子叶——组织——蓖麻胚乳——4X",
       "plantType": "双子叶",
       "sourceName": "蓖麻胚乳4X.jpg",
       "magnification": "4X"
@@ -1068,7 +1068,7 @@
       "id": "植物组织_蚕豆茎2.jpg",
       "categoryId": "植物组织",
       "imagePath": "data/植物组织/蚕豆茎2.jpg",
-      "answer": "蚕豆茎2",
+      "answer": "双子叶——茎——蚕豆",
       "plantType": "双子叶",
       "sourceName": "蚕豆茎2.jpg",
       "magnification": ""
@@ -1077,7 +1077,7 @@
       "id": "植物组织_黄麻纤维10X.jpg",
       "categoryId": "植物组织",
       "imagePath": "data/植物组织/黄麻纤维10X.jpg",
-      "answer": "黄麻纤维——10X",
+      "answer": "双子叶——组织——黄麻纤维——10X",
       "plantType": "双子叶",
       "sourceName": "黄麻纤维10X.jpg",
       "magnification": "10X"
@@ -1086,7 +1086,7 @@
       "id": "植物组织_黄麻纤维40X.jpg",
       "categoryId": "植物组织",
       "imagePath": "data/植物组织/黄麻纤维40X.jpg",
-      "answer": "黄麻纤维——40X",
+      "answer": "双子叶——组织——黄麻纤维——40X",
       "plantType": "双子叶",
       "sourceName": "黄麻纤维40X.jpg",
       "magnification": "40X"
@@ -1113,7 +1113,7 @@
       "id": "花_棉花柱10X纵切-1.jpg",
       "categoryId": "花",
       "imagePath": "data/花/棉花柱10X纵切-1.jpg",
-      "answer": "双子叶——花——棉花柱纵切-1——10X",
+      "answer": "双子叶——花——棉花柱纵切——10X",
       "plantType": "双子叶",
       "sourceName": "棉花柱10X纵切-1.jpg",
       "magnification": "10X"
@@ -1122,7 +1122,7 @@
       "id": "花_棉花柱10X纵切-2.jpg",
       "categoryId": "花",
       "imagePath": "data/花/棉花柱10X纵切-2.jpg",
-      "answer": "双子叶——花——棉花柱纵切-2——10X",
+      "answer": "双子叶——花——棉花柱纵切——10X",
       "plantType": "双子叶",
       "sourceName": "棉花柱10X纵切-2.jpg",
       "magnification": "10X"
@@ -1158,7 +1158,7 @@
       "id": "花_棉花柱4X纵切-1.jpg",
       "categoryId": "花",
       "imagePath": "data/花/棉花柱4X纵切-1.jpg",
-      "answer": "双子叶——花——棉花柱纵切-1——4X",
+      "answer": "双子叶——花——棉花柱纵切——4X",
       "plantType": "双子叶",
       "sourceName": "棉花柱4X纵切-1.jpg",
       "magnification": "4X"
@@ -1203,7 +1203,7 @@
       "id": "花_百合子房2-10X-2.jpg",
       "categoryId": "花",
       "imagePath": "data/花/百合子房2-10X-2.jpg",
-      "answer": "单子叶——花——百合子房2——10X",
+      "answer": "单子叶——花——百合子房——10X",
       "plantType": "单子叶",
       "sourceName": "百合子房2-10X-2.jpg",
       "magnification": "10X"
@@ -1212,7 +1212,7 @@
       "id": "花_百合子房2-10X-3.jpg",
       "categoryId": "花",
       "imagePath": "data/花/百合子房2-10X-3.jpg",
-      "answer": "单子叶——花——百合子房2——10X",
+      "answer": "单子叶——花——百合子房——10X",
       "plantType": "单子叶",
       "sourceName": "百合子房2-10X-3.jpg",
       "magnification": "10X"
@@ -1221,7 +1221,7 @@
       "id": "花_百合子房2-4X-1.jpg",
       "categoryId": "花",
       "imagePath": "data/花/百合子房2-4X-1.jpg",
-      "answer": "单子叶——花——百合子房2——4X",
+      "answer": "单子叶——花——百合子房——4X",
       "plantType": "单子叶",
       "sourceName": "百合子房2-4X-1.jpg",
       "magnification": "4X"

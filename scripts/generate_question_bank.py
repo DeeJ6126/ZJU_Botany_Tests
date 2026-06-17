@@ -107,7 +107,14 @@ def extract_answer(filename: str) -> str:
     # Handle cases like "40X中末期" where magnification is in the middle
     cleaned = re.sub(r"\d+[Xx]", "", cleaned)
 
-    # Clean up
+    # Clean up trailing punctuation first
+    cleaned = cleaned.rstrip(" -—")
+
+    # Strip trailing standalone digits / sequence numbers
+    # (e.g. "夹竹桃2" -> "夹竹桃", "中末期2" -> "中末期")
+    cleaned = re.sub(r"\d+$", "", cleaned)
+
+    # Final cleanup
     cleaned = cleaned.rstrip(" -—")
 
     return cleaned if cleaned else name
@@ -144,16 +151,24 @@ def build_formatted_answer(raw_answer: str, category_id: str, filename: str) -> 
 
     # For "植物组织" category, try to infer organ from name
     if category_id == "植物组织":
+        detected_organ = None
+        detected_base = None
         for organ_key in ["茎", "叶", "根", "花"]:
             if organ_key in raw_answer:
                 base = get_base_name(raw_answer, organ_key)
-                if base and base != raw_answer and len(base) >= 1:
-                    parts = [plant_type, ORGAN_NAMES[organ_key], base]
-                    if mag:
-                        parts.append(mag)
-                    return "——".join(parts)
-        # Can't parse — keep as raw answer
-        parts = [raw_answer]
+                if base and len(base) >= 1:
+                    detected_organ = ORGAN_NAMES[organ_key]
+                    detected_base = base
+                    break
+
+        if detected_organ and detected_base:
+            # Use the detected organ even when integral terms
+            # prevented stripping (base == raw_answer)
+            parts = [plant_type, detected_organ, detected_base]
+        else:
+            # No organ detected — use "组织" as the organ field
+            parts = [plant_type, ORGAN_NAMES[category_id], raw_answer]
+
         if mag:
             parts.append(mag)
         return "——".join(parts)
