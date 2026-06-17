@@ -1,6 +1,6 @@
 import { Link, useNavigate } from 'react-router-dom'
 import { usePractice } from '../hooks/usePractice'
-import { getImageSrc } from '../lib/practice'
+import { useImageSrc } from '../hooks/useImageSrc'
 
 export function MistakesPage() {
   const {
@@ -90,7 +90,7 @@ export function MistakesPage() {
 
             <div className="slice-thumb">
               <img
-                src={getImageSrc(question!.imagePath)}
+                src={useImageSrc(question!.imagePath)}
                 alt={question!.sourceName}
                 loading="lazy"
               />

@@ -29,6 +29,10 @@ jobs:
           cache: 'npm'
       - name: Install dependencies
         run: npm install
+      - name: Install Pillow
+        run: pip install Pillow
+      - name: Compress images
+        run: python scripts/compress_images.py
       - name: Build
         run: npm run build
         env:

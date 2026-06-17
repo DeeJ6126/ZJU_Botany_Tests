@@ -2,6 +2,7 @@ import { Navigate, Route, Routes } from 'react-router-dom'
 import './App.css'
 import { AppLayout } from './components/AppLayout'
 import { PracticeProvider } from './context/PracticeContext'
+import { QualityProvider } from './context/QualityContext'
 import { useQuestionBank } from './hooks/useQuestionBank'
 import { CategorySelectionPage } from './pages/CategorySelectionPage'
 import { GalleryPage } from './pages/GalleryPage'
@@ -42,6 +43,7 @@ function App() {
 
   return (
     <PracticeProvider questionBank={questionBank}>
+      <QualityProvider>
       <AppLayout>
         <Routes>
           <Route path="/" element={<IntroPage />} />
@@ -53,6 +55,7 @@ function App() {
           <Route path="*" element={<Navigate replace to="/" />} />
         </Routes>
       </AppLayout>
+      </QualityProvider>
     </PracticeProvider>
   )
 }

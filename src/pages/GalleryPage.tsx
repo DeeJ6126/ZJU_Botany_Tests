@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { usePractice } from '../hooks/usePractice'
-import { getImageSrc } from '../lib/practice'
+import { useQuality } from '../context/QualityContext'
 import {
   buildGalleryHierarchy,
   STAGE_LABELS,
@@ -220,7 +220,16 @@ function ThumbnailGrid({
   images: GalleryImage[]
   onOpenLightbox: (images: SliceQuestion[], index: number) => void
 }) {
+  const { qualityMode } = useQuality()
+  const base = import.meta.env.BASE_URL
   const questionList = images.map((img) => img.question)
+
+  function resolveSrc(imagePath: string): string {
+    if (qualityMode === 'low') {
+      return `${base}${imagePath.replace(/^data\//, 'data_low/')}`
+    }
+    return `${base}${imagePath}`
+  }
 
   return (
     <div className="gallery-grid">
@@ -235,7 +244,7 @@ function ThumbnailGrid({
           >
             <div className="slice-thumb">
               <img
-                src={getImageSrc(q.imagePath)}
+                src={resolveSrc(q.imagePath)}
                 alt={q.sourceName}
                 loading="lazy"
               />

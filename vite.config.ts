@@ -36,6 +36,12 @@ export default defineConfig({
           copyDirSync(dataDir, distDataDir)
           console.log(`Copied data/ to dist/data/`)
         }
+        const lowDir = resolve(__dirname, 'data_low')
+        const distLowDir = resolve(__dirname, 'dist', 'data_low')
+        if (existsSync(lowDir)) {
+          copyDirSync(lowDir, distLowDir)
+          console.log(`Copied data_low/ to dist/data_low/`)
+        }
       },
     },
   ],

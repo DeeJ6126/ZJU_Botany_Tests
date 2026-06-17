@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react'
 import { NavLink } from 'react-router-dom'
 import { usePractice } from '../hooks/usePractice'
+import { useQuality } from '../context/QualityContext'
 
 interface AppLayoutProps {
   children: ReactNode
@@ -8,6 +9,7 @@ interface AppLayoutProps {
 
 export function AppLayout({ children }: AppLayoutProps) {
   const { questionBank, session, mistakeRecords } = usePractice()
+  const { qualityMode, toggleQuality } = useQuality()
   const total = session?.questionOrder.length ?? questionBank.totalQuestions
   const answered = session?.revealedIds.length ?? 0
 
@@ -35,6 +37,14 @@ export function AppLayout({ children }: AppLayoutProps) {
         </nav>
 
         <div className="status-group">
+          <button
+            className="quality-toggle"
+            onClick={toggleQuality}
+            type="button"
+            title={qualityMode === 'high' ? '切换到流畅模式' : '切换到高质模式'}
+          >
+            {qualityMode === 'high' ? '◉ 高质' : '○ 流畅'}
+          </button>
           <div className="status-pill">
             <span>进度</span>
             <strong>{answered}/{total}</strong>

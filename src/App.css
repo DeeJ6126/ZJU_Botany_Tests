@@ -156,6 +156,29 @@
   color: var(--ink);
 }
 
+/* Quality toggle */
+.quality-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.72);
+  color: var(--ink-soft);
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 160ms ease, border-color 160ms ease;
+  white-space: nowrap;
+}
+
+.quality-toggle:hover {
+  background: rgba(255, 255, 255, 0.92);
+  border-color: var(--green);
+  color: var(--green);
+}
+
 .page-shell {
   position: relative;
   z-index: 1;

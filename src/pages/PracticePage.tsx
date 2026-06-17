@@ -1,6 +1,7 @@
 import { Navigate, useNavigate } from 'react-router-dom'
 import { usePractice } from '../hooks/usePractice'
-import { getImageSrc, getProgressSummary } from '../lib/practice'
+import { useImageSrc } from '../hooks/useImageSrc'
+import { getProgressSummary } from '../lib/practice'
 
 export function PracticePage() {
   const {
@@ -119,7 +120,7 @@ export function PracticePage() {
         <div className="slice-image-container">
           <img
             className="slice-image"
-            src={getImageSrc(question.imagePath)}
+            src={useImageSrc(question.imagePath)}
             alt="植物学显微镜切片图"
             loading="lazy"
           />
