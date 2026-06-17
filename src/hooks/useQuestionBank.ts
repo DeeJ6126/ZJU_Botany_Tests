@@ -22,7 +22,7 @@ export function useQuestionBank(): UseQuestionBankResult {
         setLoading(true)
         setError(null)
 
-        const response = await fetch('/question-bank.json', {
+        const response = await fetch(`${import.meta.env.BASE_URL}question-bank.json`, {
           signal: controller.signal,
         })
 
