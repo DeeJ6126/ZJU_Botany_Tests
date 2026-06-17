@@ -77,8 +77,8 @@ def generate_question_bank():
 
         for img_file in image_files:
             question_id = f"{cat_id}_{img_file}"
-            # Use POSIX path for web
-            image_path = f"/data/{cat_id}/{img_file}"
+            # Use POSIX path — relative, no leading slash (BASE_URL will be prepended at runtime)
+            image_path = f"data/{cat_id}/{img_file}"
             answer = extract_answer(img_file)
 
             questions.append({

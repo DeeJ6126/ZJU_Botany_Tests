@@ -96,6 +96,12 @@ export function getProgressSummary(session: PracticeSession | null) {
   return { total, revealed, remaining }
 }
 
+/** Resolve a relative image path against the app's base URL. */
+export function getImageSrc(imagePath: string): string {
+  const base = import.meta.env.BASE_URL
+  return `${base}${imagePath}`
+}
+
 function buildSessionTitle(
   categoryIds: string[],
   questionBank: QuestionBank,
