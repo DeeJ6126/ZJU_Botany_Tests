@@ -1,0 +1,56 @@
+import { useEffect, useState } from 'react'
+import type { QuestionBank } from '../types'
+
+interface UseQuestionBankResult {
+  questionBank: QuestionBank | null
+  loading: boolean
+  error: string | null
+  reload: () => void
+}
+
+export function useQuestionBank(): UseQuestionBankResult {
+  const [questionBank, setQuestionBank] = useState<QuestionBank | null>(null)
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState<string | null>(null)
+  const [reloadToken, setReloadToken] = useState(0)
+
+  useEffect(() => {
+    const controller = new AbortController()
+
+    async function load() {
+      try {
+        setLoading(true)
+        setError(null)
+
+        const response = await fetch('/question-bank.json', {
+          signal: controller.signal,
+        })
+
+        if (!response.ok) {
+          throw new Error(`题库文件读取失败（HTTP ${response.status}）。`)
+        }
+
+        const data = (await response.json()) as QuestionBank
+        setQuestionBank(data)
+      } catch (err) {
+        if (controller.signal.aborted) return
+        setError(
+          err instanceof Error ? err.message : '题库加载时发生未知错误。',
+        )
+      } finally {
+        if (!controller.signal.aborted) setLoading(false)
+      }
+    }
+
+    load()
+
+    return () => controller.abort()
+  }, [reloadToken])
+
+  return {
+    questionBank,
+    loading,
+    error,
+    reload: () => setReloadToken((t) => t + 1),
+  }
+}
