@@ -9,6 +9,8 @@ export interface SliceQuestion {
   categoryId: string
   imagePath: string
   answer: string
+  plantType: string
+  magnification: string
   sourceName: string
 }
 
