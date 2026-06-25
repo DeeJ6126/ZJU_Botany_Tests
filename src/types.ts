@@ -40,3 +40,35 @@ export interface MistakeRecord {
   addedCount: number
   lastAddedAt: string
 }
+
+// ── Family (科属代表植物) types ──────────────────────
+
+export interface FamilyEntry {
+  family: string
+  species: string[]
+}
+
+export interface FamilyQuestion {
+  id: string
+  term: string
+  description: string
+  entries: FamilyEntry[]
+}
+
+export interface FamilyQuestionBank {
+  generatedAt: string
+  totalQuestions: number
+  questions: FamilyQuestion[]
+}
+
+export interface CellResult {
+  correct: boolean
+  expectedFamily: string
+  expectedSpecies: string[]
+}
+
+export type FamilyAnswerCell = string
+
+export type FamilySubmitResult =
+  | { kind: 'correct' }
+  | { kind: 'incorrect'; rowResults: CellResult[] }

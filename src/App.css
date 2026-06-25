@@ -1052,3 +1052,112 @@ code {
     grid-template-columns: minmax(0, 1fr);
   }
 }
+
+/* ── Family practice (科属练习) ──────────────────────── */
+
+.family-question-header {
+  margin-bottom: 14px;
+}
+
+.family-description {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--ink);
+  margin: 0;
+}
+
+.family-feedback {
+  margin-top: 16px;
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.family-feedback.is-correct {
+  color: var(--correct);
+}
+
+.family-feedback.is-incorrect {
+  color: var(--incorrect);
+}
+
+/* Answer matrix */
+.family-matrix {
+  display: grid;
+  gap: 12px;
+}
+
+.family-matrix-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0 4px;
+}
+
+.family-matrix-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  align-items: start;
+  position: relative;
+}
+
+.family-input {
+  padding: 14px 16px;
+  border-radius: var(--radius-md);
+  border: 1.5px solid var(--line);
+  background: rgba(255, 255, 255, 0.72);
+  font-size: 1rem;
+  font-family: var(--font-body);
+  color: var(--ink);
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.family-input:focus {
+  border-color: var(--green);
+  box-shadow: 0 0 0 3px rgba(26, 107, 60, 0.12);
+}
+
+.family-input.is-correct {
+  border-color: var(--correct);
+  background: var(--correct-soft);
+}
+
+.family-input.is-incorrect {
+  border-color: var(--incorrect);
+  background: var(--incorrect-soft);
+}
+
+.family-row-feedback {
+  grid-column: 1 / -1;
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+  padding: 0 4px;
+}
+
+.family-matrix-actions {
+  margin-top: 8px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+@media (max-width: 560px) {
+  .family-matrix-header,
+  .family-matrix-row {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  .family-input {
+    padding: 12px;
+    font-size: 0.92rem;
+  }
+}

@@ -32,6 +32,7 @@ export function AppLayout({ children }: AppLayoutProps) {
           <NavLink className={getNavClass} to="/categories">分类</NavLink>
           <NavLink className={getNavClass} to="/practice">练习</NavLink>
           <NavLink className={getNavClass} to="/gallery">图库</NavLink>
+          <NavLink className={getNavClass} to="/family">科属</NavLink>
           <NavLink className={getNavClass} to="/mistakes">错题本</NavLink>
           <NavLink className={getNavClass} to="/results">结果</NavLink>
         </nav>

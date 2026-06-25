@@ -1,0 +1,221 @@
+{
+  "generatedAt": "2026-06-25T10:46:19.059144+00:00",
+  "totalQuestions": 12,
+  "questions": [
+    {
+      "id": "family_00",
+      "term": "单体雄蕊",
+      "description": "植物的一朵花内有雄蕊多枚，花药完全分离，花丝彼此连结成筒状，包裹在雌蕊外面",
+      "entries": [
+        {
+          "family": "锦葵科",
+          "species": [
+            "锦葵",
+            "陆地棉"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family_01",
+      "term": "聚药雄蕊",
+      "description": "花丝分离，花药互相连合成管状",
+      "entries": [
+        {
+          "family": "菊科",
+          "species": [
+            "蒲公英"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family_02",
+      "term": "多体雄蕊",
+      "description": "一朵花中有多枚雄蕊，其花丝连合成多束",
+      "entries": [
+        {
+          "family": "藤黄科",
+          "species": [
+            "金丝桃"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family_03",
+      "term": "合蕊柱",
+      "description": "雄蕊与雌蕊花柱合生而成的柱状体",
+      "entries": [
+        {
+          "family": "兰科",
+          "species": [
+            "蝴蝶兰"
+          ]
+        },
+        {
+          "family": "萝藦科",
+          "species": [
+            "萝藦",
+            "球兰"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family_04",
+      "term": "舌状花冠",
+      "description": "合瓣花，花冠下部连合成筒状，上部连合呈扁平舌状",
+      "entries": [
+        {
+          "family": "菊科",
+          "species": [
+            "菊苣"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family_05",
+      "term": "唇形花冠",
+      "description": "合瓣花冠的一种，花冠呈对称的二唇形（上面由二裂片合生为上唇，下面三裂片多少结合构成下唇）",
+      "entries": [
+        {
+          "family": "唇形科",
+          "species": [
+            "薄荷",
+            "薰衣草",
+            "紫苏",
+            "鼠尾草"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family_06",
+      "term": "中轴胎座",
+      "description": "雌蕊由多心皮构成，心皮互相连合，在子房中形成中轴和隔膜，子房室数与心皮数相同，胚珠着生在中轴上",
+      "entries": [
+        {
+          "family": "锦葵科",
+          "species": [
+            "扶桑"
+          ]
+        },
+        {
+          "family": "芸香科",
+          "species": [
+            "橙"
+          ]
+        },
+        {
+          "family": "百合科",
+          "species": [
+            "百合"
+          ]
+        },
+        {
+          "family": "玄参科",
+          "species": [
+            "金鱼草"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family_07",
+      "term": "侧膜胎座",
+      "description": "雄蕊由多心皮构成，各心皮边缘合生，子房1室，胚珠着生于每一心皮的边缘",
+      "entries": [
+        {
+          "family": "堇菜科",
+          "species": [
+            "三色堇"
+          ]
+        },
+        {
+          "family": "海桐科",
+          "species": [
+            "海桐"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family_08",
+      "term": "总状花序",
+      "description": "花序轴上着生有柄的、花梗大致长短相等的花，由下而上开放",
+      "entries": [
+        {
+          "family": "豆科",
+          "species": [
+            "紫藤"
+          ]
+        },
+        {
+          "family": "十字花科",
+          "species": [
+            "荠菜"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family_09",
+      "term": "穗状花序",
+      "description": "花序轴上着生许多无梗或花梗极短的两性花，由下而上开放",
+      "entries": [
+        {
+          "family": "车前草科",
+          "species": [
+            "车前草"
+          ]
+        },
+        {
+          "family": "马鞭草科",
+          "species": [
+            "马鞭草"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family_10",
+      "term": "聚合果",
+      "description": "一花中的离生心皮发育形成的果实群",
+      "entries": [
+        {
+          "family": "蔷薇科",
+          "species": [
+            "草莓（食用部分为花托）"
+          ]
+        },
+        {
+          "family": "木兰科",
+          "species": [
+            "玉兰"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family_11",
+      "term": "聚花果",
+      "description": "整个花序发育形成的果实",
+      "entries": [
+        {
+          "family": "凤梨科",
+          "species": [
+            "菠萝"
+          ]
+        },
+        {
+          "family": "桑科",
+          "species": [
+            "桑葚"
+          ]
+        }
+      ]
+    }
+  ]
+}

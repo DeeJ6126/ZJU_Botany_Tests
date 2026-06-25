@@ -1,10 +1,12 @@
 import { Navigate, Route, Routes } from 'react-router-dom'
 import './App.css'
 import { AppLayout } from './components/AppLayout'
+import { FamilyPracticeProvider } from './context/FamilyPracticeContext'
 import { PracticeProvider } from './context/PracticeContext'
 import { QualityProvider } from './context/QualityContext'
 import { useQuestionBank } from './hooks/useQuestionBank'
 import { CategorySelectionPage } from './pages/CategorySelectionPage'
+import { FamilyPracticePage } from './pages/FamilyPracticePage'
 import { GalleryPage } from './pages/GalleryPage'
 import { IntroPage } from './pages/IntroPage'
 import { MistakesPage } from './pages/MistakesPage'
@@ -44,17 +46,20 @@ function App() {
   return (
     <PracticeProvider questionBank={questionBank}>
       <QualityProvider>
+      <FamilyPracticeProvider>
       <AppLayout>
         <Routes>
           <Route path="/" element={<IntroPage />} />
           <Route path="/categories" element={<CategorySelectionPage />} />
           <Route path="/practice" element={<PracticePage />} />
+          <Route path="/family" element={<FamilyPracticePage />} />
           <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/mistakes" element={<MistakesPage />} />
           <Route path="/results" element={<ResultsPage />} />
           <Route path="*" element={<Navigate replace to="/" />} />
         </Routes>
       </AppLayout>
+      </FamilyPracticeProvider>
       </QualityProvider>
     </PracticeProvider>
   )

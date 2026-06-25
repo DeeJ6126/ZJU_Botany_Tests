@@ -6,3 +6,4 @@ public/data
 data_low
 *.txt
 !docs/*.md
+data/
