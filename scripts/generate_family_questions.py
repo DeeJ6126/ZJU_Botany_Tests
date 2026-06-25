@@ -109,14 +109,19 @@ def main() -> int:
     raw = parse_section2(text)
 
     # ── Post-process ────────────────────────────────
-    # Clean parenthetical notes from species and fix descriptions
+    # Clean parenthetical notes from species (keep as note field)
     for r in raw:
         for e in r["entries"]:
-            e["species"] = [
-                re.sub(r"[（(][^)）]*[)）]", "", s).strip()
-                for s in e["species"]
-            ]
-        # Fix 聚合果 description
+            clean_species = []
+            notes = []
+            for s in e["species"]:
+                m = re.search(r"[（(]([^)）]*)[)）]", s)
+                if m:
+                    notes.append(m.group(1))
+                clean_species.append(re.sub(r"[（(][^)）]*[)）]", "", s).strip())
+            e["species"] = clean_species
+            if notes:
+                e["note"] = "；".join(notes)
         if r["term"] == "聚合果":
             r["description"] = "花中的离生心皮发育形成的果实群"
 

@@ -46,6 +46,8 @@ export interface MistakeRecord {
 export interface FamilyEntry {
   family: string
   species: string[]
+  /** Optional annotation shown in feedback, NOT part of grading. */
+  note?: string
 }
 
 export interface FamilyQuestion {

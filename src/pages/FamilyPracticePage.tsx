@@ -173,7 +173,7 @@ function AnswerMatrix({
   answers: string[][]
   submitted: boolean
   correctRows: Set<number>
-  expectedEntries: { family: string; species: string[] }[]
+  expectedEntries: { family: string; species: string[]; note?: string }[]
   onSetCell: (row: number, col: number, value: string) => void
   onSubmit: () => void
   onNext: () => void
@@ -266,7 +266,9 @@ function AnswerMatrix({
           />
           {submitted && (
             <span className="family-row-feedback">
-              {correctRows.has(r) ? '✓' : `应为 ${expectedEntries[r]?.family || '?'} / ${expectedEntries[r]?.species.join('、') || '?'}`}
+              {correctRows.has(r)
+                ? `✓${expectedEntries[r]?.note ? `（${expectedEntries[r]!.note}）` : ''}`
+                : `应为 ${expectedEntries[r]?.family || '?'} / ${expectedEntries[r]?.species.join('、') || '?'}`}
             </span>
           )}
         </div>
