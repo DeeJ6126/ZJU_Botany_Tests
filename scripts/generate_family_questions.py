@@ -108,6 +108,18 @@ def main() -> int:
     text = extract_text(DOCX_PATH)
     raw = parse_section2(text)
 
+    # ── Post-process ────────────────────────────────
+    # Clean parenthetical notes from species and fix descriptions
+    for r in raw:
+        for e in r["entries"]:
+            e["species"] = [
+                re.sub(r"[（(][^)）]*[)）]", "", s).strip()
+                for s in e["species"]
+            ]
+        # Fix 聚合果 description
+        if r["term"] == "聚合果":
+            r["description"] = "花中的离生心皮发育形成的果实群"
+
     questions = []
     for i, r in enumerate(raw):
         qid = f"family_{i:02d}"

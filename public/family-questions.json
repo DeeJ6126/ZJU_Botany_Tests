@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T10:46:19.059144+00:00",
+  "generatedAt": "2026-06-25T11:19:13.046987+00:00",
   "totalQuestions": 12,
   "questions": [
     {
@@ -182,12 +182,12 @@
     {
       "id": "family_10",
       "term": "聚合果",
-      "description": "一花中的离生心皮发育形成的果实群",
+      "description": "花中的离生心皮发育形成的果实群",
       "entries": [
         {
           "family": "蔷薇科",
           "species": [
-            "草莓（食用部分为花托）"
+            "草莓"
           ]
         },
         {

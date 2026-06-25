@@ -257,7 +257,7 @@ function AnswerMatrix({
             }}
             className={getInputClass(r)}
             type="text"
-            placeholder="物种名"
+            placeholder="物种名（多个用逗号分隔）"
             value={answers[r]?.[1] ?? ''}
             onChange={(e) => onSetCell(r, 1, e.target.value)}
             onKeyDown={(e) => handleKeyDown(e, r, 1)}

@@ -60,7 +60,11 @@ function gradeAnswers(
   for (let r = 0; r < answers.length; r++) {
     const [family, species] = answers[r]
     const familyClean = family.trim()
-    const speciesClean = species.trim()
+    // Split user input by Chinese/English commas, 顿号, or whitespace
+    const userTokens = species
+      .trim()
+      .split(/[，、,\s]+/)
+      .filter((t) => t.length > 0)
 
     for (let e = 0; e < entries.length; e++) {
       if (used.has(e)) continue
@@ -68,7 +72,10 @@ function gradeAnswers(
       const familyMatch = familyClean === entry.family
       const speciesMatch =
         entry.species.length === 0 ||
-        entry.species.some((s) => speciesClean === s)
+        userTokens.length === 0 ||
+        userTokens.some((token) =>
+          entry.species.some((s) => token === s),
+        )
       if (familyMatch && speciesMatch) {
         used.add(e)
         correct.add(r)
